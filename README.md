@@ -11,3 +11,13 @@ JenkinsとGitHubなどを連携させるためのスクリプト
 #### 実行方法
 bash commit-comment.sh $1
 - $1 : コメント内容が格納されたファイルへのパス．
+
+### commit-status.sh
+- GitHub pull request builder pluginを導入したジョブから呼び出す
+- 引数としてプルリクエストのステータスにおけるcontext,state,descriptionを受取り，プルリクエストのステータスを作成/更新する．
+
+#### 実行方法
+bash commit-status.sh $1 $2 $3
+- $1 : context
+- $2 : state
+- $3 : description
