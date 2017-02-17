@@ -5,7 +5,7 @@ JenkinsとGitHubなどを連携させるためのスクリプト
 
 ### commit-comment.sh
 - GitHub pull request builder pluginを導入したジョブから呼び出す
-- 引数としてファイルパスを受取り，ファイル内容をコメントする
+- 引数としてファイルパスを受取り，ファイル内容をプルリクエスト(の末尾コミット)にコメントする
 - ファイル内容はGitHubのMarkdown形式
 
 #### 実行方法
