@@ -3,6 +3,10 @@ JenkinsとGitHubなどを連携させるためのスクリプト
 
 ## GitHub用スクリプト
 
+### 環境構築
+- jenkinsの実行ユーザにおける~/にcloneする
+- ~/jenkins-scripts/access_token.txtにGitHub APIのアクセストークンを記述しておく
+
 ### commit-comment.sh
 - GitHub pull request builder pluginを導入したジョブから呼び出す
 - 引数としてファイルパスを受取り，ファイル内容をプルリクエスト(の末尾コミット)にコメントする
