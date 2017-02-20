@@ -21,3 +21,13 @@ bash commit-status.sh $1 $2 $3
 - $1 : context
 - $2 : state
 - $3 : description
+
+### make.sh
+- GitHub pull request builder pluginを導入したジョブから呼び出す
+- 与えられた引数に基いてmakeを実行する
+- makeの状況をGitHubのコミットステータスとして通知する
+
+#### 実行方法
+bash make.sh $1 $2
+- $1 : コミットステータスにおけるcontext
+- $2 : makeに渡す引数
